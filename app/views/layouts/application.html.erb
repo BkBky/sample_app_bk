@@ -2,7 +2,8 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title><%= yield(:title) %> | Ruby on Rails Tutorial Sample App</title>
+    <title><%= full_title(yield(:title)) %></title>
+    
     <!-- "csrf_meta_tags" prevents cross-site request forgery (CSRF), a type of malicious web attack. -->
     <%= csrf_meta_tags %>
     <%= stylesheet_link_tag    'application', media: 'all',

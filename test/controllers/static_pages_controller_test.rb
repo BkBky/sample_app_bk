@@ -19,7 +19,7 @@ class StaticPagesControllerTest < ActionDispatch::IntegrationTest
     # code without refactoring
     # assert_select "title", "Home | Ruby on Rails Tutorial Sample App"
     # # Refactoring line 13
-    assert_select "title", "Home | #{@base_title}"
+    assert_select "title", "#{@base_title}"
   end
 
   test "should get help" do
