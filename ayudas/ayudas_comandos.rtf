@@ -4,14 +4,12 @@
 }
 {\colortbl;\red255\green255\blue255;\red0\green0\blue109;\red234\green234\blue234;\red8\green8\blue8;
 \red169\green14\blue26;\red242\green242\blue242;\red0\green0\blue0;\red255\green255\blue193;\red0\green0\blue0;
-\red11\green84\blue1;\red247\green247\blue247;\red38\green38\blue38;\red255\green255\blue255;\red8\green8\blue8;
-\red234\green234\blue234;\red169\green14\blue26;\red0\green0\blue109;\red190\green205\blue237;\red11\green84\blue1;
-\red247\green247\blue247;}
+\red11\green84\blue1;\red247\green247\blue247;\red38\green38\blue38;\red255\green255\blue255;\red190\green205\blue237;
+\red0\green0\blue109;\red234\green234\blue234;\red8\green8\blue8;}
 {\*\expandedcolortbl;;\cssrgb\c0\c0\c50196;\cssrgb\c93333\c93333\c93333;\cssrgb\c2745\c2745\c2745;
 \cssrgb\c72941\c12941\c12941;\csgray\c95825;\csgray\c0\c85000;\cssrgb\c100000\c100000\c80000;\cssrgb\c0\c0\c0;
-\cssrgb\c0\c39216\c0;\cssrgb\c97647\c97647\c97647;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c2745\c2745\c2745;
-\cssrgb\c93333\c93333\c93333;\cssrgb\c72941\c12941\c12941;\cssrgb\c0\c0\c50196;\cssrgb\c78824\c84314\c94510;\cssrgb\c0\c39216\c0;
-\cssrgb\c97647\c97647\c97647;}
+\cssrgb\c0\c39216\c0;\cssrgb\c97647\c97647\c97647;\cssrgb\c20000\c20000\c20000;\cssrgb\c100000\c100000\c100000;\cssrgb\c78824\c84314\c94510;
+\cssrgb\c0\c0\c50196;\cssrgb\c93333\c93333\c93333;\cssrgb\c2745\c2745\c2745;}
 \margl1440\margr1440\vieww10800\viewh8400\viewkind0
 \pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
 
@@ -170,39 +168,46 @@ ______________\
 para bajar im\'e1genes, usamos este comando:\
 \pard\pardeftab720\sl345\partightenfactor0
 
-\f1\b\fs28\fsmilli14400 \cf14 \cb15 \outl0\strokewidth0 \strokec14 curl -o app/assets/images/rails.png -OL railstutorial.org/rails.png\
+\f1\b\fs28\fsmilli14400 \cf4 \cb3 curl -o app/assets/images/rails.png -OL railstutorial.org/rails.png\
 curl -OL cdn.learnenough.com/kitten.jpg\
 \
 \
 __________________\
 AGREGAR LA GEMA DE BOOTSTRAP en el archivo gemmfidle:\
 \
-source \cf16 \strokec16 'https://rubygems.org'\cf14 \strokec14 \
+source \cf5 'https://rubygems.org'\cf4 \
 \
-gem \cf16 \strokec16 'rails'\cf14 \strokec14 ,          \cf16 \strokec16 '5.0.1'\
-despise de la gema rails:\cf14 \strokec14 \
-gem \cf16 \strokec16 'bootstrap-sass'\cf14 \strokec14 , \cf16 \strokec16 \'913.3.6\'92\
-\cf14 \strokec14 bundle install\
+gem \cf5 'rails'\cf4 ,          \cf5 '5.0.1'\
+despise de la gema rails:\cf4 \
+gem \cf5 'bootstrap-sass'\cf4 , \cf5 \'913.3.6\'92\
+\cf4 bundle install\
 bundle update\
 \
 Con este comando creamos un archivo css personalizados para poder todo el css necesario para el tutorial, con esto no permitimos que cada controlador tenga su propio css.\
 \
 \pard\pardeftab720\sl345\partightenfactor0
-\cf17 \strokec17 $\cf14 \strokec14  touch app/assets/stylesheets/custom.scss\
+\cf2 $\cf4  touch app/assets/stylesheets/custom.scss\
 \
 \pard\pardeftab720\sl420\partightenfactor0
 
-\f5\b0\fs36 \cf14 \cb18 cualquier hojas de estilo en este directorio se incluir\'e1n autom\'e1ticamente como parte del
-\f1\b\fs34\fsmilli17100 \cf19 \cb20 \strokec19 application.css
-\fs28\fsmilli14400 \cf14 \cb15 \strokec14 \
+\f5\b0\fs36 \cf4 \cb14 cualquier hojas de estilo en este directorio se incluir\'e1n autom\'e1ticamente como parte del
+\f1\b\fs34\fsmilli17100 \cf10 \cb11 application.css\
+\
+\
+CAP 7. CREAR ARCHIVOS:\
 \pard\pardeftab720\sl345\partightenfactor0
-\cf14 \
+
+\fs28\fsmilli14400 \cf15 \cb16 \outl0\strokewidth0 \strokec15 $\cf17 \strokec17  Mkdir app / views / compartidos\
+\pard\pardeftab720\sl420\partightenfactor0
+\cf4 \cb3 \outl0\strokewidth0 \
+\pard\pardeftab720\sl345\partightenfactor0
+\cf4 \
 \
 \
 \
 \pard\pardeftab720\sl432\partightenfactor0
 
-\f3\b0\fs36 \cf4 \cb1 \outl0\strokewidth0 \
+\f3\b0\fs36 \cf4 \cb1 \
 \pard\pardeftab720\sl280\partightenfactor0
 
 \f1\b\fs34\fsmilli17100 \cf10 \

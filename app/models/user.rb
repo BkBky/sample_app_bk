@@ -1,4 +1,5 @@
 class User < ApplicationRecord
+  
   # este es un callback, que convierte el correo de usuario a minúsculas antes de salvarlo en la db 
   before_save {self.email = email.downcase}	
 	# is a hash {presence: true, length: { maximum: 50 }}
