@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     if @user.save
       flash[:success] = "Welcome to the Sample App!"
       redirect_to @user
-      # next line works the same way that before line
+      # next line works the same way that before line (redirect_to @user)
       # redirect_to user_url(@user)
     else
       render 'new'
